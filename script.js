@@ -8,3 +8,14 @@ const b = () => {
 
 b();
 
+let i = 0;
+    const c = () => {
+        try {
+            i++;
+            c();
+        } catch (error) {
+            console.log(`max - ${i}`);
+        }
+    }
+
+    c();
