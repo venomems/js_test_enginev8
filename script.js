@@ -1,1 +1,10 @@
-alert(1)
+const a = () => {
+    console.trace('hi');
+}
+
+const b = () => {
+    a();
+}
+
+b();
+
